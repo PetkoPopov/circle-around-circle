@@ -3,8 +3,8 @@ let y = 0;
 let x1 = 0
 let y1 = 0
 
-let centerX = 150;
-let centerY = 100
+let centerX = 439;
+let centerY = 294
 var diameter = 100
 var drawLine = true
 let stepTr = 0
@@ -22,7 +22,10 @@ function draw() {
     circle(centerX, centerY , 10)
     noFill()
     circle(centerX, centerY, diameter)
-    line(0,0,600,600*tgLine)
+    line(0, 0, 600, 600 * tgLine)
+    line(centerX, centerY, centerY * tgLine + centerX, 0)
+
+    line(centerX, centerY, 0,centerX /tgLine + centerY)
     line(0, centerY,600,centerY)
     line(centerX,0,centerX,600)
 
